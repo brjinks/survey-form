@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NBA Survey Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="animated bounceInDown">NBA Survey Form</h1>
+      <div class="wrapper animated bounceInLeft">
+        <p id="description">Tell us your thoughts about the NBA</p>
+        <div class="form-div">
+          <form id="survey-form">
+            <p>
+              <label id="name-label">Name</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                required
+                placeholder="Name"
+              />
+            </p>
+            <p>
+              <label id="email-label">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+            </p>
+            <p>
+              <label id="number-label">Age</label>
+              <input
+                id="number"
+                min="5"
+                max="120"
+                type="number"
+                name="age"
+                placeholder="Age"
+              />
+            </p>
+            <p>
+              <label>How big of an NBA fan are you?</label>
+              <select id="dropdown">
+                <option disabled value>Select an option</option>
+                <option>Diehard fan</option>
+                <option>Just follow my team</option>
+                <option>Just watch the big games</option>
+                <option>Casual fan</option>
+              </select>
+            </p>
+            <p>
+              <label>Who is your favorite current NBA player?</label>
+              <ul>
+                <li><label>Lebron James<input type="radio" name="radio-buttons" value="1"></label></li>
+                <li><label>Steph Curry<input type="radio" name="radio-buttons" value="2"></label></li>
+                <li><label>Giannis Antetokounmpo<input type="radio" name="radio-buttons" value="3"></label></li>
+                <li><label>James Harden<input type="radio" name="radio-buttons" value="4"></label></li>
+                <li><label>Russell Westbrook<input type="radio" name="radio-buttons" value="5"></label></li>
+              </ul>
+            </p>
+            <p>
+              <label>What excites you when watching an NBA game? (Check all that apply)</label>
+              <ul>
+                <li><label>Slam dunks<input type="checkbox" value="1"></label></li>
+                <li><label>Three-point shots<input type="checkbox" value="2"></label></li>
+                <li><label>Blocked shots<input type="checkbox" value="3"></label></li>
+                <li><label>Highlight passes<input type="checkbox" value="4"></label></li>
+                <li><label>Crazy crossovers<input type="checkbox" value="5"></label></li>
+              </ul>
+            </p>
+            <p>
+              <label>How could the NBA be more entertaining?</label>
+              <textarea cols = "90" rows="5"></textarea>
+            </p>
+            <button id="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
